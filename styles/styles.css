@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #FF9D0D;
+  --color-secondary: #ff9d0d;
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -18,7 +18,7 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -183,6 +183,7 @@ section {
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
+  font-size: 1.5rem;
 }
 
 .about-container {
@@ -254,11 +255,16 @@ section {
 }
 .about-lang .skills {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   text-align: center;
   padding-top: 2rem;
+  font-size: 3.5rem;
+  gap: 40px;
 }
-.about-lang .skills .html:hover, .about-lang .skills .css:hover, .about-lang .skills .js:hover, .about-lang .skills .nodejs:hover {
+.about-lang .skills .html:hover,
+.about-lang .skills .css:hover,
+.about-lang .skills .js:hover,
+.about-lang .skills .nodejs:hover {
   color: var(--color-secondary);
   cursor: default;
   transform: translateY(-5%);
@@ -267,6 +273,7 @@ section {
 .portfolio-text {
   padding: 2rem 0;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .portfolios {
@@ -307,6 +314,7 @@ section {
 }
 .portfolios .portfolio-item .hover-item .icons {
   display: flex;
+  gap: 30px;
   justify-content: center;
   align-items: center;
 }
@@ -416,7 +424,8 @@ section {
 .contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
 }
-.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+.contact-content-con .right-contact .input-control input,
+.contact-content-con .right-contact .input-control textarea {
   border-radius: 30px;
   font-weight: inherit;
   font-size: inherit;
