@@ -269,6 +269,9 @@ section {
   cursor: default;
   transform: translateY(-5%);
 }
+.about-lang .skills i {
+  font-size: 3.5rem;
+}
 
 .portfolio-text {
   padding: 2rem 0;
@@ -559,7 +562,7 @@ hr {
     font-size: 2.5rem;
   }
   .skills {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: repeat(3, 1fr) !important;
     grid-gap: 2rem;
     font-size: 1.5rem;
   }
